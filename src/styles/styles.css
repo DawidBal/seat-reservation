@@ -1,0 +1,46 @@
+:root {
+    --proposed: hsl(38, 96%, 53%);
+    --reserved: hsl(0, 0%, 20%);
+    --free: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: 1px solid #000;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
